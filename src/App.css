@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.selected-scoogi {
+  width: 80%;
+  height: 80%;
+}
+
+#versus-frame {
+  position: absolute;
+  background-image: url('img/battle-results/versus-frame.png');
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+
+.versus-frame {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  position: relative;
+}
+
+#winner {
+  position: absolute;
+  width: 45%;
+  bottom: 5%;
+  z-index: 10;
+}
+
+.flipped {
+  transform: scaleX(-1);
+  z-index: 1;
+}
+
+.missing-opponent {
+  transform: scaleX(-1);
+}
+
+.fade-out {
+  animation: fade-out 5s ease;
+}
+
+.fade-in {
+  animation: fade-in 5s ease-in-out;
+}
+
+.scoogitar {
+  height: 3rem;
+  width: 3rem;
+  border: transparent;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

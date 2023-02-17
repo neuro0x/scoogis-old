@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Arial';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://arweave.net/JDQJidoLgI9JZlOp1hgHUQ4mCHC8WvQZf48JzMy_iWM);
+  background-position: center top;
+  background-size: 100%;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  font-family: 'Patrick Hand SC', serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
